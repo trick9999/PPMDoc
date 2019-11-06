@@ -4,3 +4,4 @@ permalink: ':title'
 pygments: false
 safe: true
 title: 'PPM_Synth Class Reference'
+highlighter: rouge
