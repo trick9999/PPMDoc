@@ -7,6 +7,9 @@ layout: nil
 ### Public Member Functions 
 ---
 <style>
+    table {
+        width: 100%;
+    }
     tr {
         border-bottom: 1px solid black;
     }
