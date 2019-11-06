@@ -4,15 +4,12 @@ title: 'Public Member Functions'
 layout: nil
 ---
 
-### Success
-
-Successes differ from errors in that their body may not be a simple response object with a code and a message. The headers however are consistent across all calls:
-
-* `GET`, `PUT`, `DELETE` returns `200 OK` on success,
-* `POST ` returns 201 on success,
-
 ### Public Member Functions 
+---
 <style>
+    tr {
+        border-bottom: 1px solid black;
+    }
     td {
         vertical-align: top
     }
