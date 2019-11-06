@@ -13,78 +13,85 @@ layout: nil
     tr {
         border-bottom: 1px solid black;
     }
-    td {
+    .type td {
+        width: 20%;
         vertical-align: top
+        align: right
+    }
+    .func td {
+        width: 80%;
+        vertical-align: top
+        align: left
     }
 </style>
 
 <table>
     <tr> 
-        <td> virtual </td>
-        <td> 
-            ~PPM_Synthesizer() <br> 
-            Destructor 
+        <td class="type"> virtual </td>
+        <td class="func"> 
+            ~PPM_Synthesizer() 
+            <br> Destructor 
         </td>
     </tr>
     <tr> 
-        <td> void </td>
-        <td> 
+        <td class="type"> void </td>
+        <td class="func"> 
             init()
             <br> Initialize or reset sounds 
         </td>
     </tr>
     <tr> 
-        <td> void </td>
-        <td> 
+        <td class="type"> void </td>
+        <td class="func"> 
             loadInstruments()
             <br> Load specific instruments
         </td>
     </tr>
     <tr> 
-        <td> void </td>
-        <td> 
+        <td class="type"> void </td>
+        <td class="func"> 
             loadInstruments()
             <br> Modify current pattern based on initSegmentPos, segmentPos and pitches
         </td>
     </tr>
     <tr> 
-        <td> void </td>
-        <td> 
+        <td class="type"> void </td>
+        <td class="func"> 
             threadModify()
             <br> Wrapper for function modify() running in back-thread
         </td>
     </tr>
     <tr> 
-        <td> StringArray </td>
-        <td> 
+        <td class="type"> StringArray </td>
+        <td class="func"> 
             getSampleFileName()
             <br> Return currently selected sample file names
         </td>
     </tr>
     <tr> 
-        <td> XmlElement* </td>
-        <td> 
+        <td class="type"> XmlElement* </td>
+        <td class="func"> 
             getMetaData()
             <br> Return metadata of current pattern
         </td>
     </tr>
     <tr> 
-        <td> int* </td>
-        <td> 
+        <td class="type"> int* </td>
+        <td class="func"> 
             getSelectedFiles()
             <br> Return selected pattern files in GUI
         </td>
     </tr>
     <tr> 
-        <td> int </td>
-        <td> 
+        <td class="type"> int </td>
+        <td class="func"> 
             getCurrentNote()
             <br> Return currently or recently played note
         </td>
     </tr>
     <tr> 
-        <td> int </td>
-        <td> 
+        <td class="type"> int </td>
+        <td class="func"> 
             getCurrentNote()
             <br> Return currently or recently played note
         </td>
