@@ -11,31 +11,76 @@ Successes differ from errors in that their body may not be a simple response obj
 * `GET`, `PUT`, `DELETE` returns `200 OK` on success,
 * `POST ` returns 201 on success,
 
-When [retrieving stuff](#get-stuff) for example:
-
-```Status: 200 OK```
-```{
-    {
-        id: thing_1,
-        name: 'My first thing'
-    },
-    {
-        id: thing_2,
-        name: 'My second thing'
-    }
-}```
-
-### Error
-
-Error responses are simply returning [standard HTTP error codes](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) along with some additional information:
-
-* The error code is sent back as a status header,
-* The body includes an object describing both the code and message (for debugging and/or display purposes),
-
-For a call with an invalid authentication token for example:
-
-```Status: 401 Access denied```
-```{
-    code: 401,
-    message: 'Access denied: invalid authentication token.'
-}```
+### Public Member Functions 
+<table>
+    <tr> 
+        <td> virtual </td>
+        <td> 
+            ~PPM_Synthesizer() <br> 
+            Destructor 
+        </td>
+    </tr>
+    <tr> 
+        <td> void </td>
+        <td> 
+            init()
+            <br> Initialize or reset sounds 
+        </td>
+    </tr>
+    <tr> 
+        <td> void </td>
+        <td> 
+            loadInstruments()
+            <br> Load specific instruments
+        </td>
+    </tr>
+    <tr> 
+        <td> void </td>
+        <td> 
+            loadInstruments()
+            <br> Modify current pattern based on initSegmentPos, segmentPos and pitches
+        </td>
+    </tr>
+    <tr> 
+        <td> void </td>
+        <td> 
+            threadModify()
+            <br> Wrapper for function modify() running in back-thread
+        </td>
+    </tr>
+    <tr> 
+        <td> StringArray </td>
+        <td> 
+            getSampleFileName()
+            <br> Return currently selected sample file names
+        </td>
+    </tr>
+    <tr> 
+        <td> XmlElement* </td>
+        <td> 
+            getMetaData()
+            <br> Return metadata of current pattern
+        </td>
+    </tr>
+    <tr> 
+        <td> int* </td>
+        <td> 
+            getSelectedFiles()
+            <br> Return selected pattern files in GUI
+        </td>
+    </tr>
+    <tr> 
+        <td> int </td>
+        <td> 
+            getCurrentNote()
+            <br> Return currently or recently played note
+        </td>
+    </tr>
+    <tr> 
+        <td> int </td>
+        <td> 
+            getCurrentNote()
+            <br> Return currently or recently played note
+        </td>
+    </tr>
+</table>
