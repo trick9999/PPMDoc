@@ -15,13 +15,13 @@ layout: nil
     }
     .type td {
         width: 20%;
+        text-align: right
         vertical-align: top
-        align: right
     }
     .func td {
         width: 80%;
+        text-align: left
         vertical-align: top
-        align: left
     }
 </style>
 
