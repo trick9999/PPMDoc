@@ -4,6 +4,8 @@ title: 'Public Member Functions'
 layout: nil
 ---
 
+Hi
+
 <style>
     td {
         vertical-align: top
