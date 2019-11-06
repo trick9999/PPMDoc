@@ -1,7 +1,6 @@
 ---
 exclude: ['README.markdown']
 permalink: ':title'
-pygments: false
+pygments: true
 safe: true
 title: 'PPM_Synth Class Reference'
-highlighter: rouge
